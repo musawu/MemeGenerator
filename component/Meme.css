@@ -1,0 +1,107 @@
+.main--element {
+    padding: 36px;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.form {
+    display: grid;
+    grid-template: 40px 40px / 1fr 1fr;
+    gap: 17px;
+    margin-bottom: 20px;
+}
+
+.form--input {
+    text-indent: 5px;
+    border-radius: 5px;
+}
+
+.form--button {
+    grid-column: 1/-1;
+    border-radius: 5px;
+    background-color: blueviolet;
+    color: white;
+    font-size: 14px;
+    font-weight: 500;
+    border: none;
+    cursor: pointer;
+}
+
+.meme {
+    position: relative;
+    display: grid;
+    place-items: center;
+    margin-top: 20px;
+}
+
+.meme--image {
+    width: 100%;
+    max-width: 600px;
+    border-radius: 3px;
+    grid-column: 1/-1;
+    margin: 0 auto;   
+}
+
+.meme--text {
+    position: absolute;
+    width: 80%;
+    text-align: center;
+    left: 50%;
+    transform: translateX(-50%);
+    font-family: impact, sans-serif;
+    font-size: 2em;
+    text-transform: uppercase;
+    color: white;
+    letter-spacing: 1px;
+    text-shadow:
+        2px 2px 0 #000,
+        -2px -2px 0 #000,
+        2px -2px 0 #000,
+        -2px 2px 0 #000,
+        0 2px 0 #000,
+        2px 0 0 #000,
+        0 -2px 0 #000,
+        -2px 0 0 #000,
+        2px 2px 5px #000;
+}
+
+.top {
+    top: 5%;
+}
+
+.bottom {
+    bottom: 5%;
+}
+
+
+
+
+.main--element.dark {
+    background-color: #1a1a1a;
+    color: white;
+    min-height: 100vh; 
+}
+
+.form.dark {
+    background-color: #1a1a1a;
+}
+
+.form.dark .form--input {
+    background-color: #2d2d2d;
+    color: white;
+    border: 1px solid #444;
+}
+
+.form.dark .form--input::placeholder {
+    color: #888;
+}
+
+.form.dark .form--button {
+    background-color: #8b5cf6;  
+}
+
+
+.form.dark .form--input:focus {
+    outline: none;
+    border-color: #8b5cf6;
+}
